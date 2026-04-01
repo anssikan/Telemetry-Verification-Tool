@@ -24,3 +24,5 @@ DHT22 detects signal, send 80 us low signal as response
 transmission begins, every bit transmission begins with a low of 50 us
 next signal goes high, if for 26-28 us then bit is 0, if for 70 us then bit is 1
 on to the next bit, total 40 bits
+
+
