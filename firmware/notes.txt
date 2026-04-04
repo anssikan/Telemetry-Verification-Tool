@@ -1,20 +1,19 @@
-studying:
 https://cdn-shop.adafruit.com/datasheets/Digital%20humidity%20and%20temperature%20sensor%20AM2302.pdf
-figure out how DHT22 transmission is done
-
-RH = relative humidity
-T = temperature
+notes from ^ to decide how arduino code should work
 
 ### transmission structure, total 40 bits
 
-8 bits RH integral data
-8 bits RH decimal data
-8 bits integral T data
-8 bits decimal T data
+8 bits relative humidity integral data
+8 bits relative humidity decimal data
+8 bits integral temperature data
+8 bits decimal temperature data
 8 bit check-sum
 
 the check sum should be the last 8 bits of sum:
-8 bits RH integral data + 8 bits RH decimal data + 8 bits integral T data + 8 bits decimal T data
+8 bits relative humidity integral data
++ 8 bits relative humidity decimal data
++ 8 bits temperature integral data
++ 8 bits temperature decimal data
 
 ### transmission timing
 

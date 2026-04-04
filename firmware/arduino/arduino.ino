@@ -1,6 +1,6 @@
-#include "DHT.h"
+#include "sensorlib.h"
 
-DHT dht(2, DHT22);
+#define SENROR_PIN 2;
 
 void setup() {
   Serial.begin(9600);
