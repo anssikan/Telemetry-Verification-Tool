@@ -15,6 +15,7 @@ class Sensorlib {
         struct DhtCapture {
             uint64_t startTime;
             uint64_t endTime;
+            uint8_t edgeCount;
             CaptureStatus captureStatus;
             EdgeEvent edges[EDGES]
         }
